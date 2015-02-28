@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0091D8F80E81B9330029341E /* OpenGL.framework */; };
+		00B784B30FF439BC000DE1D7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784AF0FF439BC000DE1D7 /* Accelerate.framework */; };
+		00B784B40FF439BC000DE1D7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */; };
+		00B784B50FF439BC000DE1D7 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B10FF439BC000DE1D7 /* AudioUnit.framework */; };
+		00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B20FF439BC000DE1D7 /* CoreAudio.framework */; };
+		1F4220ADE7F54EE5BDCFCD7F /* QuadMotionApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6377B33990EC4EF09AC95C04 /* QuadMotionApp.cpp */; };
+		5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B10EAFCA74003A9687 /* CoreVideo.framework */; };
+		5323E6B60EAFCA7E003A9687 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B50EAFCA7E003A9687 /* QTKit.framework */; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		D7E106626C5340068658B803 /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = DD45AA4F07B5480491887E84 /* CinderApp.icns */; };
+		F34D991319ABC686006FBFC6 /* TrackerFinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F34D991119ABC686006FBFC6 /* TrackerFinder.cpp */; };
+		F34D991419ABC686006FBFC6 /* TrackerListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F34D991219ABC686006FBFC6 /* TrackerListener.cpp */; };
+		F35F945519B9050E00D681B1 /* Arduino.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F35F945319B9050E00D681B1 /* Arduino.cpp */; };
+		F373C8DA19BC7E3400977044 /* libLeap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F373C8D919BC7E3400977044 /* libLeap.dylib */; };
+		F373C8DB19BC7E7B00977044 /* libLeap.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = F373C8D919BC7E3400977044 /* libLeap.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		F39BBC9C1A62CBF0004AC52A /* GUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F39BBC9A1A62CBF0004AC52A /* GUI.cpp */; };
+		F3B9F76719B7AE990048FCC5 /* Quadcopter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3B9F76519B7AE990048FCC5 /* Quadcopter.cpp */; };
+		F3B9F76A19B7AEB00048FCC5 /* PIDcontroller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3B9F76819B7AEB00048FCC5 /* PIDcontroller.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F34D991719ABC6C6006FBFC6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				F373C8DB19BC7E7B00977044 /* libLeap.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0091D8F80E81B9330029341E /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		00B784AF0FF439BC000DE1D7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		00B784B10FF439BC000DE1D7 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		00B784B20FF439BC000DE1D7 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		49CFA68C227C4B3BA305FE83 /* QuadMotion_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuadMotion_Prefix.pch; sourceTree = "<group>"; };
+		5323E6B10EAFCA74003A9687 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
+		5323E6B50EAFCA7E003A9687 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
+		6377B33990EC4EF09AC95C04 /* QuadMotionApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = QuadMotionApp.cpp; path = ../src/QuadMotionApp.cpp; sourceTree = "<group>"; };
+		7900AC0FBCF84A9BA8538BD3 /* CinderOpenCV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CinderOpenCV.h; path = ../blocks/OpenCV/include/CinderOpenCV.h; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* QuadMotion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuadMotion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2F8BF4671FC48E9A5FA1800 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD45AA4F07B5480491887E84 /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = CinderApp.icns; path = ../resources/CinderApp.icns; sourceTree = "<group>"; };
+		F33D849E19B0E8490089263C /* libopencv_imgproc.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgproc.2.4.9.dylib; path = ../../../../../../../../opt/local/lib/libopencv_imgproc.2.4.9.dylib; sourceTree = "<group>"; };
+		F33D849F19B0E84A0089263C /* libopencv_core.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_core.2.4.9.dylib; path = ../../../../../../../../opt/local/lib/libopencv_core.2.4.9.dylib; sourceTree = "<group>"; };
+		F33D84A219B0E8750089263C /* libopencv_highgui.2.4.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_highgui.2.4.9.dylib; path = ../../../../../../../../opt/local/lib/libopencv_highgui.2.4.9.dylib; sourceTree = "<group>"; };
+		F34D990D19ABC649006FBFC6 /* Leap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Leap.h; sourceTree = "<group>"; };
+		F34D990E19ABC649006FBFC6 /* LeapMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeapMath.h; sourceTree = "<group>"; };
+		F34D990F19ABC664006FBFC6 /* TrackerFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackerFinder.h; sourceTree = "<group>"; };
+		F34D991019ABC664006FBFC6 /* TrackerListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackerListener.h; sourceTree = "<group>"; };
+		F34D991119ABC686006FBFC6 /* TrackerFinder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TrackerFinder.cpp; sourceTree = "<group>"; };
+		F34D991219ABC686006FBFC6 /* TrackerListener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TrackerListener.cpp; sourceTree = "<group>"; };
+		F35F945319B9050E00D681B1 /* Arduino.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Arduino.cpp; sourceTree = "<group>"; };
+		F35F945419B9050E00D681B1 /* Arduino.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Arduino.h; sourceTree = "<group>"; };
+		F373C8D919BC7E3400977044 /* libLeap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libLeap.dylib; sourceTree = "<group>"; };
+		F39BBC9A1A62CBF0004AC52A /* GUI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GUI.cpp; sourceTree = "<group>"; };
+		F39BBC9B1A62CBF0004AC52A /* GUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUI.h; sourceTree = "<group>"; };
+		F3B9F76519B7AE990048FCC5 /* Quadcopter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Quadcopter.cpp; sourceTree = "<group>"; };
+		F3B9F76619B7AE990048FCC5 /* Quadcopter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quadcopter.h; sourceTree = "<group>"; };
+		F3B9F76819B7AEB00048FCC5 /* PIDcontroller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PIDcontroller.cpp; sourceTree = "<group>"; };
+		F3B9F76919B7AEB00048FCC5 /* PIDcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIDcontroller.h; sourceTree = "<group>"; };
+		FDB9E41E17DB49EC8C057E48 /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Resources.h; path = ../include/Resources.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */,
+				5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */,
+				5323E6B60EAFCA7E003A9687 /* QTKit.framework in Frameworks */,
+				00B784B30FF439BC000DE1D7 /* Accelerate.framework in Frameworks */,
+				00B784B40FF439BC000DE1D7 /* AudioToolbox.framework in Frameworks */,
+				F373C8DA19BC7E3400977044 /* libLeap.dylib in Frameworks */,
+				00B784B50FF439BC000DE1D7 /* AudioUnit.framework in Frameworks */,
+				00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01B97315FEAEA392516A2CEA /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				D2B6DB6F3B1E4F178EE0BF67 /* OpenCV */,
+			);
+			name = Blocks;
+			sourceTree = "<group>";
+		};
+		080E96DDFE201D6D7F000001 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				6377B33990EC4EF09AC95C04 /* QuadMotionApp.cpp */,
+				F39BBC9A1A62CBF0004AC52A /* GUI.cpp */,
+				F3B9F76519B7AE990048FCC5 /* Quadcopter.cpp */,
+				F3B9F76819B7AEB00048FCC5 /* PIDcontroller.cpp */,
+				F34D991119ABC686006FBFC6 /* TrackerFinder.cpp */,
+				F34D991219ABC686006FBFC6 /* TrackerListener.cpp */,
+				F35F945319B9050E00D681B1 /* Arduino.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00B784AF0FF439BC000DE1D7 /* Accelerate.framework */,
+				00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */,
+				00B784B10FF439BC000DE1D7 /* AudioUnit.framework */,
+				00B784B20FF439BC000DE1D7 /* CoreAudio.framework */,
+				5323E6B50EAFCA7E003A9687 /* QTKit.framework */,
+				5323E6B10EAFCA74003A9687 /* CoreVideo.framework */,
+				0091D8F80E81B9330029341E /* OpenGL.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* QuadMotion.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* QuadMotion */ = {
+			isa = PBXGroup;
+			children = (
+				F373C8D919BC7E3400977044 /* libLeap.dylib */,
+				01B97315FEAEA392516A2CEA /* Blocks */,
+				29B97315FDCFA39411CA2CEA /* Headers */,
+				080E96DDFE201D6D7F000001 /* Source */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = QuadMotion;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				F39BBC9B1A62CBF0004AC52A /* GUI.h */,
+				F3B9F76619B7AE990048FCC5 /* Quadcopter.h */,
+				F3B9F76919B7AEB00048FCC5 /* PIDcontroller.h */,
+				F34D991019ABC664006FBFC6 /* TrackerListener.h */,
+				F34D990F19ABC664006FBFC6 /* TrackerFinder.h */,
+				F35F945419B9050E00D681B1 /* Arduino.h */,
+				FDB9E41E17DB49EC8C057E48 /* Resources.h */,
+				F34D990D19ABC649006FBFC6 /* Leap.h */,
+				F34D990E19ABC649006FBFC6 /* LeapMath.h */,
+				49CFA68C227C4B3BA305FE83 /* QuadMotion_Prefix.pch */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DD45AA4F07B5480491887E84 /* CinderApp.icns */,
+				C2F8BF4671FC48E9A5FA1800 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F33D84A219B0E8750089263C /* libopencv_highgui.2.4.9.dylib */,
+				F33D849E19B0E8490089263C /* libopencv_imgproc.2.4.9.dylib */,
+				F33D849F19B0E84A0089263C /* libopencv_core.2.4.9.dylib */,
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		613D70048BB346588D9D43E1 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				7900AC0FBCF84A9BA8538BD3 /* CinderOpenCV.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		D2B6DB6F3B1E4F178EE0BF67 /* OpenCV */ = {
+			isa = PBXGroup;
+			children = (
+				613D70048BB346588D9D43E1 /* include */,
+			);
+			name = OpenCV;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* QuadMotion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "QuadMotion" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				F34D991719ABC6C6006FBFC6 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuadMotion;
+			productInstallPath = "$(HOME)/Applications";
+			productName = QuadMotion;
+			productReference = 8D1107320486CEB800E47090 /* QuadMotion.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "QuadMotion" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* QuadMotion */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* QuadMotion */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7E106626C5340068658B803 /* CinderApp.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F35F945519B9050E00D681B1 /* Arduino.cpp in Sources */,
+				F34D991319ABC686006FBFC6 /* TrackerFinder.cpp in Sources */,
+				F39BBC9C1A62CBF0004AC52A /* GUI.cpp in Sources */,
+				F3B9F76A19B7AEB00048FCC5 /* PIDcontroller.cpp in Sources */,
+				1F4220ADE7F54EE5BDCFCD7F /* QuadMotionApp.cpp in Sources */,
+				F34D991419ABC686006FBFC6 /* TrackerListener.cpp in Sources */,
+				F3B9F76719B7AE990048FCC5 /* Quadcopter.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QuadMotion_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					/opt/local/lib,
+				);
+				OTHER_LDFLAGS = (
+					"\"$(CINDER_PATH)/lib/libcinder_d.a\"",
+					../blocks/OpenCV/lib/macosx/libopencv_calib3d.a,
+					../blocks/OpenCV/lib/macosx/libopencv_contrib.a,
+					../blocks/OpenCV/lib/macosx/libopencv_core.a,
+					../blocks/OpenCV/lib/macosx/libopencv_features2d.a,
+					../blocks/OpenCV/lib/macosx/libopencv_flann.a,
+					../blocks/OpenCV/lib/macosx/libopencv_gpu.a,
+					../blocks/OpenCV/lib/macosx/libopencv_imgproc.a,
+					../blocks/OpenCV/lib/macosx/libopencv_legacy.a,
+					../blocks/OpenCV/lib/macosx/libopencv_ml.a,
+					../blocks/OpenCV/lib/macosx/libopencv_nonfree.a,
+					../blocks/OpenCV/lib/macosx/libopencv_objdetect.a,
+					../blocks/OpenCV/lib/macosx/libopencv_ocl.a,
+					../blocks/OpenCV/lib/macosx/libopencv_photo.a,
+					../blocks/OpenCV/lib/macosx/libopencv_stitching.a,
+					../blocks/OpenCV/lib/macosx/libopencv_superres.a,
+					../blocks/OpenCV/lib/macosx/libopencv_ts.a,
+					../blocks/OpenCV/lib/macosx/libopencv_video.a,
+					../blocks/OpenCV/lib/macosx/libopencv_videostab.a,
+				);
+				PRODUCT_NAME = QuadMotion;
+				SYMROOT = ./build;
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "\"$(CINDER_PATH)/include\" ../include ../blocks/OpenCV/include ../blocks/OpenCV/include/opencv2 /opt/local/include";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_FAST_MATH = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QuadMotion_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					/opt/local/lib,
+				);
+				OTHER_LDFLAGS = (
+					"\"$(CINDER_PATH)/lib/libcinder.a\"",
+					../blocks/OpenCV/lib/macosx/libopencv_calib3d.a,
+					../blocks/OpenCV/lib/macosx/libopencv_contrib.a,
+					../blocks/OpenCV/lib/macosx/libopencv_core.a,
+					../blocks/OpenCV/lib/macosx/libopencv_features2d.a,
+					../blocks/OpenCV/lib/macosx/libopencv_flann.a,
+					../blocks/OpenCV/lib/macosx/libopencv_gpu.a,
+					../blocks/OpenCV/lib/macosx/libopencv_imgproc.a,
+					../blocks/OpenCV/lib/macosx/libopencv_legacy.a,
+					../blocks/OpenCV/lib/macosx/libopencv_ml.a,
+					../blocks/OpenCV/lib/macosx/libopencv_nonfree.a,
+					../blocks/OpenCV/lib/macosx/libopencv_objdetect.a,
+					../blocks/OpenCV/lib/macosx/libopencv_ocl.a,
+					../blocks/OpenCV/lib/macosx/libopencv_photo.a,
+					../blocks/OpenCV/lib/macosx/libopencv_stitching.a,
+					../blocks/OpenCV/lib/macosx/libopencv_superres.a,
+					../blocks/OpenCV/lib/macosx/libopencv_ts.a,
+					../blocks/OpenCV/lib/macosx/libopencv_video.a,
+					../blocks/OpenCV/lib/macosx/libopencv_videostab.a,
+				);
+				PRODUCT_NAME = QuadMotion;
+				STRIP_INSTALLED_PRODUCT = YES;
+				SYMROOT = ./build;
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "\"$(CINDER_PATH)/include\" ../include ../blocks/OpenCV/include ../blocks/OpenCV/include/opencv2 /opt/local/include";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CINDER_PATH = ../../../../../../Documents/cinder_0.8.6_mac;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/boost\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include ../blocks/OpenCV/include ../blocks/OpenCV/include/opencv2";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CINDER_PATH = ../../../../../../Documents/cinder_0.8.6_mac;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/boost\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include ../blocks/OpenCV/include ../blocks/OpenCV/include/opencv2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "QuadMotion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "QuadMotion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
